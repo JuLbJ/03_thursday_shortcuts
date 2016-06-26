@@ -1,49 +1,35 @@
 #container{
-	width: 900px;
-	background-color: #101010;
+	width: 1000px;
+	height: 650px;
 	margin-left: auto;
 	margin-right: auto;
-	color: #006400;
 }
 #logo{
+	height: 44px;
 	background-color: #101010;
-	color: #006400;
-	text-align: center;
+	color: #FFFF66;
+	text-align: center;/*NO: float: left, cause one under another!!!*/
 }
-#nav{
-	width: 145px;
-	min-height: 660px;
-	text-align: left;
-	background-color: #006400;
-	color: #101010;
-	padding-left: 5px;
-	float: left;
-	}
 #content{
-		width: 590px;
-		height: 650px;
-		background-color: #101010;
-		color: #006400;
-		padding: 5px;
-		float: left;
+	height: 650px;
+	width: 1000px;
+	background-color: #FFFF66;
+	color: #101010;
+	display:inline-block;/*eliminated the SPACE between div_s !!!*/
 }
 #footer{
-			background-color:  #101010;
-			color: #006400; /*never TEXT-COLOR, just: color!!!*/
-			text-align: center;
-			float: clear: both;
+	height: 50px;
+	width: 1000px;
+	background-color: #101010;
+	color: #FFFF66;
+	text-align: center;
+	display:inline-block;
+	padding-top: 15px;
+	padding-bottom: 15px
 }
-a{
-	text-decoration: underline;
-	color: #101010;
-}
-table{
-	border: 5px solid #006400;
-	width: 900px;
-	height: 70px;
-}
-.intro{
-	font-size: 16;
+h1{
+	border: 3px #FFFF66 solid;
+	border-style: double;
 }
 @media screen and (max-width:959px){ /*WIDTH important*/
 		#container{
