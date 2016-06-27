@@ -1,43 +1,83 @@
+@media screen and (max-width:770px){ /*WIDTH important*/
+		#container{
+			width: auto;
+		}
+}
+@media screen and (max-width:360px){ /*WIDTH important*/
+		#container{
+			width: 315px;
+			font-size: 12px;
+		}
+		img {
+			display: none;
+		}
+		#content {
+			padding-left: 10px;
+		}
+}
+@media screen and (max-width:990px){ /*WIDTH important*/
+		img{
+			display: none;
+		}
+}
+li {
+	word-wrap: break-word;
+}
 #container{
-	width: 1000px;
-	height: 650px;
+
+	width: 100%;
+	height: 100% ;
 	margin-left: auto;
 	margin-right: auto;
 }
 #logo{
-	height: 44px;
+	height: 100%;
+	align-items: stretch;
 	background-color: #101010;
 	color: #FFFF66;
 	text-align: center;/*NO: float: left, cause one under another!!!*/
 }
 #content{
-	height: 650px;
-	width: 1000px;
+	height: 100%;
+	width: 98%;
+	padding-left: 2%;
 	background-color: #FFFF66;
 	color: #101010;
 	display:inline-block;/*eliminated the SPACE between div_s !!!*/
 }
 #footer{
-	height: 50px;
-	width: 1000px;
+	height: 100%;
+	width: 100%;
 	background-color: #101010;
 	color: #FFFF66;
 	text-align: center;
 	display:inline-block;
-	padding-top: 15px;
-	padding-bottom: 15px
 }
 h1{
 	border: 3px #FFFF66 solid;
 	border-style: double;
 }
-@media screen and (max-width:959px){ /*WIDTH important*/
-		#container{
-			width:100%;
+.intro01{
+	color: #101010;
 }
+.intro02{
+	color: #C00000;
 }
-@media screen and (max-width:320px){ /*WIDTH important*/
-		#container{
-			width:320px;
+a{
+	color: #383838;
+	font-style: oblique;
 }
+a.bold{
+	color: #ffbf09;
+	text: bold;
+}
+img{
+	  position: absolute;
+    right: 120px;
+    top: 100px;
+    z-index: +10;
+}
+.all{
+	display: flex;
+	align-items: stretch;
 }
